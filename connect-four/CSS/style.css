@@ -1,0 +1,140 @@
+.grid{
+    height: 300px;
+    width: 340px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 8px blue double;
+    border-top:none;
+    margin: 20px;
+    background: hsl(0, 100%, 100%);
+}
+.intro {
+    display: grid;
+}
+.intro-gone{
+    display: none;
+}
+.intro-image{
+    width: 450px;
+    height: 250px;
+    border:3px solid black;
+}
+.congrats{
+    display: none;
+}
+.congrats-seen{
+    display: grid;
+    display: all;
+    text-align: center;
+}
+#start-button, #settings-button{
+    margin: 1px;
+    color:WHITE;
+    background-color: rgb(17, 28, 75);
+    border: 0px solid red;
+    border-radius: 10px;
+    padding: 20px 20px;
+}
+#start-button:hover, #settings-button:hover{
+    cursor: pointer;
+    background-color: rgb(12, 109, 138);
+}
+.restart{
+    color: white;
+    background-color: skyblue;
+    border: 0px solid red;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+.restart:hover{
+    cursor: pointer;
+    background-color: rgba(111, 181, 199, 0.719);
+}
+.slot{
+    border: 1px solid black;
+    height: 48px;
+    width: 46px;
+}
+.slot:hover{
+    cursor: pointer;
+    background:rgba(50, 205, 166, 0.616);
+}
+.taken:hover{
+    background: rgb(255, 0, 0);
+    
+}
+.grid div {
+    display: all;
+}
+.card{
+    display: none;
+}
+.card-seen{
+    display: all;
+    text-align: center;
+}
+.settings-card{
+    display: none;
+}
+.settings-card-seen{
+    display: all;
+    text-align: center;
+    border: 3px dashed dodgerblue;
+    background: darkblue;
+}
+.settings-title{
+    color: black;
+    background: none;
+    border: none;
+}
+.bg-color {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    border: solid 3px black;
+}
+.bg-color:hover{
+    cursor: pointer;
+}
+.boardC{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    border: solid 3px black;
+}
+.boardC:hover{
+    cursor: pointer;
+}
+.S1, .S2{
+    margin: 20px 10px;
+    display: flex;
+    border: 3px solid black;
+    background: grey;
+}
+.player-one {
+    background-image: url("./images/black connect four piece.jpg");
+    background-size: cover;
+    border-radius: 20px;
+}
+.player-two {
+    background-image: url("./images/red connect four piece.jpg");
+    background-size: cover;
+    border-radius: 20px;
+}
+#back, #back2
+{
+    background: red;
+    border: 1px solid blue;
+    padding: 10px 180px;
+}
+#back:hover, #back2:hover{
+    background: darkred;
+    cursor: pointer;
+}
+.download{
+    margin-top: 10px;
+    color: red;
+    padding: 10px;
+    background: lime;
+    border: solid 5px red;
+}

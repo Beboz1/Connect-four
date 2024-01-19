@@ -1,0 +1,27 @@
+body{    
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgb(92, 0, 5);
+}
+h2 {
+    color: rgb(23, 73, 221);
+    background-color: grey;
+    border: solid 3px black;
+}
+h1{
+    color: rgba(179, 25, 25, 0.562);
+    background: skyblue;
+    border: 2px double lightsalmon;
+    padding: 10px;
+}
+h3{
+    color: #a32249;
+}
+a{
+    color: blue;
+}
+p{
+    color: black;
+}
