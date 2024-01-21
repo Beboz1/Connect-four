@@ -75,13 +75,6 @@ const winningPlayer = [
     ]
     function getResult(){
         draw++
-        if (draw == 42)
-        {
-            draw = 0
-            result.innerHTML = 'one and two its a DRAW!'
-            card.setAttribute('class', 'card')
-            congrats.setAttribute('class', 'congrats-seen')
-        }
         for (let y = 0; y < winningPlayer.length; y++){
             const square1 = squares[winningPlayer[y][0]]
             const square2 = squares[winningPlayer[y][1]]
@@ -98,6 +91,7 @@ const winningPlayer = [
             card.setAttribute('class', 'card')
             congrats.setAttribute('class', 'congrats-seen')
             draw = 0
+            congratsM()
         }
         //Check if player two won
         if (
@@ -110,7 +104,16 @@ const winningPlayer = [
             card.setAttribute('class', 'card')
             congrats.setAttribute('class', 'congrats-seen')
             draw = 0
+            congratsM()
         } 
+        
+        if (draw == 42)
+        {
+            draw = 0
+            result.innerHTML = 'one and two its a DRAW!'
+            card.setAttribute('class', 'card')
+            congrats.setAttribute('class', 'congrats-seen')
+        }
         
         
     }
@@ -121,3 +124,4 @@ export
     getResult
 }
 import {squares}from "./app.js"
+import {congratsM}from "./sound.js"

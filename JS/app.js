@@ -1,12 +1,11 @@
-    import{playBG, playPiece} from "./sound.js";
+    import{playBG, playPiece, stopBG, goBG} from "./sound.js";
 
     const squares = document.querySelectorAll('.grid div')
     import{getResult} from "./result.js";
     export {squares}
 document.addEventListener('DOMContentLoaded', () => {
 
-    
-    //used for game functionality
+    //used for game functionalityS
     const body = document.querySelector('body')
     
     const result = document.querySelector('#result')
@@ -48,7 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
     restartButton.addEventListener('click', restartGame)
 
     function startGame(){
-        playBG()
         card.setAttribute('class', 'card-seen')
         intro.setAttribute('class', 'intro-gone')
     }
@@ -116,7 +114,11 @@ document.addEventListener('DOMContentLoaded', () => {
     TC3.onclick = () => {board.style.borderColor = 'lime'}
     TC4.onclick = () => {board.style.borderColor = 'pink'}
     TC5.onclick = () => {board.style.borderColor = 'gold'}
-
+    //background music stopp
+    const pauseButton =document.querySelector('#pauseButton')
+    const playButton =document.querySelector('#playButton')
+    pauseButton.onclick = () => {stopBG()}
+    playButton.onclick = () => {goBG()}
 
 })
     
