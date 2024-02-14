@@ -93,27 +93,15 @@ document.addEventListener('DOMContentLoaded', () => {
         intro.setAttribute('class', 'intro-gone')
     }
     //Background setting
-    const BG1 = document.querySelector('#BG1')
-    const BG2 = document.querySelector('#BG2')
-    const BG3 = document.querySelector('#BG3')
-    const BG4 = document.querySelector('#BG4')
-    const BG5 = document.querySelector('#BG5')
-    BG1.onclick = () => {body.style.backgroundColor = 'rgb(92, 0, 5)'}
-    BG2.onclick = () => {body.style.backgroundColor = 'royalblue'}
-    BG3.onclick = () => {body.style.backgroundColor = 'rgb(1, 153, 47)'}
-    BG4.onclick = () => {body.style.backgroundColor = 'rgb(199, 167, 212, 45)'}
-    BG5.onclick = () => {body.style.backgroundColor = 'rgb(233, 233, 200, 50)'}
+    const InputBgc = document.querySelector('#background-color')
+    const BGCButton = document.querySelector('#change-BGC')
+    BGCButton.onclick = () => {body.style.backgroundColor = InputBgc.value;
+                                 InputBgc.style.borderColor = InputBgc.value}
     //board border setting
-    const TC1 = document.querySelector('#TC1')
-    const TC2 = document.querySelector('#TC2')
-    const TC3 = document.querySelector('#TC3')
-    const TC4 = document.querySelector('#TC4')
-    const TC5 = document.querySelector('#TC5')
-    TC1.onclick = () => {board.style.borderColor = 'red'}
-    TC2.onclick = () => {board.style.borderColor = 'blue'}
-    TC3.onclick = () => {board.style.borderColor = 'lime'}
-    TC4.onclick = () => {board.style.borderColor = 'pink'}
-    TC5.onclick = () => {board.style.borderColor = 'gold'}
+    const InputBc = document.querySelector('#board-color')
+    const BCButton = document.querySelector('#change-BC')
+    BCButton.onclick = () => {board.style.borderColor = InputBc.value;
+                                 InputBc.style.borderColor = InputBc.value}
     //background music stopp
     const pauseButton =document.querySelector('#pauseButton')
     const playButton =document.querySelector('#playButton')
@@ -121,4 +109,3 @@ document.addEventListener('DOMContentLoaded', () => {
     playButton.onclick = () => {goBG()}
 
 })
-    

@@ -87,15 +87,6 @@
     background: none;
     border: none;
 }
-.bg-color {
-    height: 50px;
-    width: 50px;
-    margin: 10px;
-    border: solid 3px black;
-}
-.bg-color:hover{
-    cursor: pointer;
-}
 .boardC{
     height: 50px;
     width: 50px;
@@ -104,6 +95,25 @@
 }
 .boardC:hover{
     cursor: pointer;
+}
+#change-BGC, #change-BC{
+    background: lime;
+    padding: 10px 100px;
+    border: groove lightblue 5px;
+    border-radius: 10px;
+    color: red;
+}
+#change-BGC:hover, #change-BC:hover{
+    background: green;
+    cursor: pointer;
+    color: blue;
+}
+#background-color, #board-color{
+    margin: 10px;
+    width: 100px;
+    height: 50px;
+    border: 4px teal double;
+    border-radius: 20px;
 }
 .S1, .S2, .S3{
     margin: 20px 10px;
